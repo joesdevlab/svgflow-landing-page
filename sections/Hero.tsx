@@ -98,6 +98,17 @@ const Hero = () => {
           <Pointer name="Ian" color="red" />
         </motion.div> */}
 
+        <div className="md:hidden flex justify-center mb-6">
+          <div className="relative h-10 w-40">
+            <Image
+              src="/assets/images/SVGFlow-logo-transparent.png"
+              alt="SVGFlow"
+              fill
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+        </div>
+
         <div className="flex justify-center">
           <h3 className="tag">✨ 100% free</h3>
         </div>

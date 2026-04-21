@@ -178,12 +178,6 @@ const Header = () => {
                       {link.label}
                     </Link>
                   ))}
-
-                  <div className="py-2 flex flex-col gap-2">
-                    <Btn className="block bg-[#29abe2] text-slate-800 font-bold">
-                      Download
-                    </Btn>
-                  </div>
                 </motion.div>
               )}
             </AnimatePresence>

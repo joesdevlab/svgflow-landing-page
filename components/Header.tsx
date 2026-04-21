@@ -20,28 +20,7 @@ const Header = () => {
         <div className="container">
           <div className="border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
             <div className="flex justify-between items-center p-2 md:px-2">
-              <Link
-                href="/"
-                className="relative h-8 md:h-12 w-32 md:w-44 md:-ml-2"
-              >
-                <Image
-                  src="/assets/images/SVGFlow-logo-transparent.png"
-                  alt="logo"
-                  fill
-                  className="ml-4"
-                  style={{ objectFit: 'contain' }}
-                />
-              </Link>
-              <nav className="hidden lg:flex flex-1 justify-center">
-                <ul className="flex items-center gap-8">
-                  {NAV_LINKS.map((link) => (
-                    <li key={link.label}>
-                      <Link href={link.href}>{link.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-              <div className="flex items-center gap-2 md:gap-4">
+              <div className="flex items-center gap-2 md:gap-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -52,7 +31,7 @@ const Header = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-menu md:hidden mr-2"
+                  className="feather feather-menu md:hidden ml-1 shrink-0"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   <line
@@ -83,7 +62,29 @@ const Header = () => {
                     )}
                   ></line>
                 </svg>
-
+                <Link
+                  href="/"
+                  className="relative h-8 md:h-12 w-28 md:w-44 md:-ml-2"
+                >
+                  <Image
+                    src="/assets/images/SVGFlow-logo-transparent.png"
+                    alt="logo"
+                    fill
+                    className="md:ml-4"
+                    style={{ objectFit: 'contain' }}
+                  />
+                </Link>
+              </div>
+              <nav className="hidden lg:flex flex-1 justify-center">
+                <ul className="flex items-center gap-8">
+                  {NAV_LINKS.map((link) => (
+                    <li key={link.label}>
+                      <Link href={link.href}>{link.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <div className="flex items-center gap-2 md:gap-4">
                 <div className="hidden md:flex gap-2 items-center">
                   <AnimatePresence>
                     {showDownloadOptions && (

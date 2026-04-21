@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <header className="py-4 lg:py-8 fixed w-full top-0 z-50">
         <div className="container">
-          <div className="border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
+          <div className="border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/95 backdrop-blur">
             <div className="flex justify-between items-center p-2 md:px-2">
               <div className="flex items-center gap-2 md:gap-0">
                 <svg

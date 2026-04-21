@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <section
-      className="py-24 overflow-x-clip"
+      className="pt-6 pb-24 md:py-24 overflow-x-clip"
       style={{
         cursor: `url(${cursorYouImage.src}), auto`,
       }}
@@ -99,7 +99,7 @@ const Hero = () => {
         </motion.div> */}
 
         <div className="md:hidden flex justify-center mb-6">
-          <div className="relative h-10 w-40">
+          <div className="relative h-16 w-64">
             <Image
               src="/assets/images/SVGFlow-logo-transparent.png"
               alt="SVGFlow"

@@ -150,14 +150,14 @@ const Header = () => {
 
                 <Btn
                   variant="default"
-                  className="font-bold px-6 bg-primary bg-[#29abe2] text-slate-800"
+                  className="hidden md:inline-flex font-bold px-6 bg-primary bg-[#29abe2] text-slate-800"
                   onClick={() => setShowDownloadOptions(!showDownloadOptions)}
                 >
                   Download Beta
                 </Btn>
                 <Btn
                   variant="default"
-                  className="font-bold px-6 bg-gray-500 text-white"
+                  className="hidden md:inline-flex font-bold px-6 bg-gray-500 text-white"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Feedback
@@ -179,11 +179,14 @@ const Header = () => {
                   ))}
 
                   <div className="py-2 flex flex-col gap-2">
-                    {/* <Btn variant="outline" className="block">
-                      Log In
-                    </Btn> */}
                     <Btn className="block bg-[#29abe2] text-slate-800 font-bold">
                       Download
+                    </Btn>
+                    <Btn
+                      className="block bg-gray-500 text-white font-bold"
+                      onClick={() => (window.location.href = '/contact')}
+                    >
+                      Feedback
                     </Btn>
                   </div>
                 </motion.div>

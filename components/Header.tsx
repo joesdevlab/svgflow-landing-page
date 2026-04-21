@@ -64,7 +64,7 @@ const Header = () => {
                 </svg>
                 <Link
                   href="/"
-                  className="relative h-8 md:h-12 w-28 md:w-44 md:-ml-2"
+                  className="relative hidden md:block md:h-12 md:w-44 md:-ml-2"
                 >
                   <Image
                     src="/assets/images/SVGFlow-logo-transparent.png"
@@ -165,6 +165,19 @@ const Header = () => {
                 </Btn>
               </div>
             </div>
+            <Link
+              href="/"
+              className="md:hidden flex justify-center pb-3"
+            >
+              <div className="relative h-8 w-32">
+                <Image
+                  src="/assets/images/SVGFlow-logo-transparent.png"
+                  alt="logo"
+                  fill
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
+            </Link>
             <AnimatePresence>
               {isOpen && (
                 <motion.div
@@ -190,7 +203,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className="pb-[86px] md:pb-[98px] lg:pb-[130px]"></div>
+      <div className="pb-[140px] md:pb-[98px] lg:pb-[130px]"></div>
     </>
   );
 };
